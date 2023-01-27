@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO-DUDES WEBSHOP</title>
+    <link rel="stylesheet" href="webshopstyle.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <a href="index.html">
+                <img src="images/LD_logo.svg" alt="LEGO-DUDES">
+            </a>
+            <figure id="cart" onclick="toggleCart()">
+                <span class="label">0</span>
+                <img src="images/legocart.svg" alt="Handlekurv">
+            </figure>
+        </header>
+        <section name="cart" id="cartviuw" class="hidden">
+            <h3>Din handlevogn</h3>
+            <ul>
+                <li>
+                    Du har ingen varer i handlevognen.
+                </li> 
+            </ul>
+            <p>Totalt kr. <span class="total">0,-</span></p> 
+        </section>
+        <nav>
+            <a href="city.html">City</a>
+            <a class="active" href="ninjago.html">Ninjago</a>
+            <a href="castle-knights.html">Castle and Kinights</a>
+            <a href="marine-pirates.html">Marine and Pirates</a>
+            <a href="movie-characters.html">Movie characters</a>
+        </nav>
+
+        <main>
+            <h2>Ninjago</h2>
+            <article class="product-card">
+                <img src="images/PROD_dragon_zane.webp" alt="Produktvilde av Zane">
+                <a href="ninjago.html">Ninjago</a>
+                <h3>Dragon Zane</h3>
+                <span class="price">Kr.89,-</span>
+                <button onclick="addToCart('Dragon Zane', 89)">Legg i handlekurv</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/PROD_lil_ninja.webp" alt="Produktvilde av Zane">
+                <a href="ninjago.html">Ninjago</a>
+                <h3>Lil Ninja</h3>
+                <span class="price">Kr.89,-</span>
+                <button class="">Legg i handlekurv</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/PROD_master_wu.webp" alt="Produktvilde av Zane">
+                <a href="ninjago.html">Ninjago</a>
+                <h3>Master Wu</h3>
+                <span class="price">Kr.109,-</span>
+                <button class="">Legg i handlekurv</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/PROD_scuba_kai.webp" alt="Produktvilde av Zane">
+                <a href="ninjago.html">Ninjago</a>
+                <h3>Scuba Kai</h3>
+                <span class="price">Kr.89,-</span>
+                <button class="">Legg i handlekurv</button>
+            </article>
+        </main>
+    </div>
+
+    <script src="shopskript.js"></script>
+</body>
+</html>
